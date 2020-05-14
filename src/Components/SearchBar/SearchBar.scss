@@ -1,0 +1,26 @@
+@import "../../scss/mixins";
+.search-wrap {
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+.search-input {
+    height: 2em;
+    min-width: 200px;
+    flex-grow: 1;
+    font-size: 16px;
+    margin-right: 1em;
+    border: none;
+    outline: none;
+    border: 1px solid var(--customDark);
+    background: transparent;
+    transition: border-color 0.3s ease-in;
+    font-family: "Neucha", cursive;
+    &:focus {
+        border-bottom: 1px solid var(--customYellow);
+    }
+}
+
+.search-button {
+    @include button();
+}
